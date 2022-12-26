@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+
+<main class="wrapper">
+  <!-- HEADER -->
+  <header class="header">
+    <span class="logo">
+      <img src="./assets/images/logo.svg" alt="company-logo">
+    </span>
+
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li class="close">
+          <img id="close" src="./assets/images/icon-menu-close.svg" alt="menu-close-icon">
+        </li>
+        <li class="link-item">Home</li>
+        <li class="link-item">New</li>
+        <li class="link-item">Popular</li>
+        <li class="link-item">Trending</li>
+        <li class="link-item">Categories</li>
+      </ul>
+    </nav>
+
+    <span class="mobile-menu">
+      <img id="mobile-menu" src="./assets/images/icon-menu.svg" alt="Hamburger-menu">
+    </span>
+  </header>
+
+  <!-- TOP/POPULAR AND NEW SECTION -->
+  <section class="top-section">
+
+    <article class="popular">
+      <span class="popular-cover">
+        <picture>
+          <source media="(min-width: 600px)" srcset="./assets/images/image-web-3-desktop.jpg">
+          <source media="(min-width: 100px)" srcset="./assets/images/image-web-3-mobile.jpg">
+          <img id="popular-cover" src="./assets/images/image-web-3-desktop.jpg" alt="news-cover-img">
+        </picture>
+        <!-- <img id="popular-cover" src="./assets/images/image-web-3-desktop.jpg" alt="news-cover-img"> -->
+      </span>
+
+      <section class="popular-text">
+        <h1 class="popular-title">The Bright Future of Web 3.0?</h1>
+
+        <div class="read-more">
+          <p class="popular-description">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+
+          <a class="read-more-btn" href="#" target="_blank" rel="noopener noreferrer">Read more</a>
+        </div>
+      </section>
+    </article>
+
+    <article class="new">
+      <h1>New</h1>
+
+      <ul class="new-articles">
+        <li class="new-items">
+          <a class="new-title" href="#" target="_blank" rel="noopener noreferrer">Hydrogen VS Electric Cars</a>
+          <p class="new-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </li>
+
+        <li class="new-items">
+          <a class="new-title" href="#" target="_blank" rel="noopener noreferrer">The Downsides of AI Artistry</a>
+          <p class="new-description">What are the possible adverse effects of on-demand AI image generation?</p>
+        </li>
+
+        <li class="new-items">
+          <a class="new-title" href="#" target="_blank" rel="noopener noreferrer">Is VC Funding Drying Up?</a>
+          <p class="new-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </li>
+      </ul>
+    </article>
+
+  </section>
+
+  <!-- BOTTOM/TRENDING SECTION -->
+  <section class="bottom-section">
+    <ul class="trending-list">
+      <li class="trending-item">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="trending-news-cover-image" class="trending-cover">
+        <span class="trending-text">
+          <h5 class="trending-id">01</h5>
+          <a class="trending-title" href="#" target="_blank">Reviving Retro PCs</a>
+          <p class="trending-description">What happens when old PCs are given modern upgrades?</p>
+        </span>
+      </li>
+
+      <li class="trending-item">
+        <img src="./assets/images/image-top-laptops.jpg" alt="trending-news-cover-image" class="trending-cover">
+        <span class="trending-text">
+          <h5 class="trending-id">02</h5>
+          <a class="trending-title" href="#" target="_blank">Top 10 Laptops of 2022</a>
+          <p class="trending-description">Our best picks for various needs and budgets.</p>
+        </span>
+      </li>
+
+      <li class="trending-item">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="trending-news-cover-image" class="trending-cover">
+        <span class="trending-text">
+          <h5 class="trending-id">03</h5>
+          <a class="trending-title" href="#" target="_blank">The Growth of Gaming</a>
+          <p class="trending-description">How the pandemic has sparked fresh opportunities.</p>
+        </span>
+      </li>
+    </ul>
+  </section>
+</main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
